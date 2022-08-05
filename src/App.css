@@ -1,38 +1,107 @@
 .App {
   text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.textBox{
+  display: block;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-items:center;
 }
 
-.App-link {
-  color: #61dafb;
+.formTextArea {
+  margin-top: 15px;
+  min-height: 50px;
+  height: auto;
+  width: 500px;
+  white-space: pre-wrap;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 16px;
+  resize: none;
+  padding: 15px;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-btn, .cancel-btn{
+  /* margin-left: 5px; */
+  /* margin-top: 70px; */
+  width: 70px;
+  height: 30px;
+  border-radius: 5px;
+  position: absolute;
 }
+
+.add-btn{
+  left: 965px;
+  bottom: 710px;
+}
+
+.cancel-btn{
+  left: 1040px;
+  bottom: 710px;
+
+}
+
+.mainConteinerStickers{
+  width: 100%;
+  height: 100% auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.stickersItem{
+  width: 100%;
+  max-width: 210px;
+  min-height: 180px;
+  font-size: 16px;
+  /* border: 1px solid black; */
+  border-radius: 15px;
+  margin: 15px;
+
+}
+
+.txta {
+  width: 100%;
+  max-width: 180px;
+  min-height: 180px;
+  font-size: 16px;
+  overflow: hidden;
+  line-height: 1.4; 
+  resize: none;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.btnDiv{
+  display: flex;
+  justify-content: space-between;
+}
+
+.editBtn img{
+  width: 20px;
+  height: 20px;
+  padding: 3px;
+}
+
+.deleteBtn, .editBtn{
+  border: none;
+  background-color: white;
+  
+}
+
+.deleteBtn :hover, .editBtn :hover{
+  background-color: pink;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
